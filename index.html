@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mya Monée Carr</title>
+  <meta name="description" content="Mya Monée Carr — creative technologist in Brooklyn. Film, photo, code, and the MFA journey at NYU." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Press+Start+2P&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { mono: ['"Space Mono"', 'ui-monospace', 'monospace'] },
+          colors: {
+            cream: '#F2EDE4',
+            ink: '#111111',
+            red: '#E63312',
+            teal: '#1F7A7A',
+            muted: '#6B6B6B',
+            ph: '#A8A39A'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero-name { font-size: clamp(3.5rem, 9vw, 9rem); }
+    @media (min-width: 1024px) { .hero-name { font-size: clamp(4rem, 7vw, 9rem); } }
+    .grid-ph {
+      background-color: #E4DED3;
+      background-image:
+        linear-gradient(#11111114 1px, transparent 1px),
+        linear-gradient(90deg, #11111114 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+  </style>
+</head>
+<body class="bg-cream font-mono text-ink">
+
+  <!-- NAV -->
+  <nav class="flex items-center justify-between border-b-4 border-ink px-4 sm:px-6 py-4">
+    <a href="#" class="text-xl font-bold">MMC*</a>
+    <div class="flex gap-1">
+      <a href="#work" class="border-2 border-ink px-3 sm:px-4 py-2 text-xs font-bold hover:bg-ink hover:text-cream">WORK</a>
+      <a href="#lab" class="border-2 border-ink px-3 sm:px-4 py-2 text-xs font-bold hover:bg-ink hover:text-cream">LAB</a>
+      <a href="#contact" class="border-2 border-ink px-3 sm:px-4 py-2 text-xs font-bold hover:bg-ink hover:text-cream">MAIL</a>
+    </div>
+  </nav>
+
+  <main class="relative grid min-h-[90vh] grid-cols-1 lg:grid-cols-2">
+
+    <!-- LEFT: HERO -->
+    <section class="relative flex flex-col justify-center border-b-4 lg:border-b-0 lg:border-r-4 border-ink p-6 sm:p-8 lg:p-12 lg:pb-40">
+      <h1 class="hero-name font-bold leading-none">MYA<br />MONÉE<br />CARR</h1>
+      <div class="mt-8 h-4 w-32 bg-red"></div>
+      <p class="mt-6 text-xs font-bold tracking-widest">CREATIVE TECHNOLOGIST / BROOKLYN</p>
+      <p class="mt-2 text-xs tracking-widest text-muted">MFA, INTEGRATED DIGITAL MEDIA @ NYU</p>
+      <div class="absolute bottom-0 left-0 h-32 w-32 bg-teal hidden lg:block"></div>
+    </section>
+
+    <!-- RIGHT: SCROLL PANEL -->
+    <section class="lg:h-[90vh] lg:overflow-y-auto">
+
+      <!-- SELECTED WORK -->
+      <div id="work" class="p-4 sm:p-6">
+        <h2 class="mb-6 text-xs font-bold tracking-widest text-muted">SELECTED WORK</h2>
+        <div class="space-y-6">
+
+          <!--
+            HOW TO ADD A PROJECT: copy one <a> block below.
+            To use a real image, replace the placeholder <div class="grid-ph ..."> with:
+            <img src="images/your-photo.jpg" alt="Project name"
+                 class="h-full w-full object-cover grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-105" />
+            Put your images in a folder called "images" next to this file.
+          -->
+
+          <a href="#" class="group block">
+            <div class="aspect-[16/10] overflow-hidden border-4 border-ink">
+              <div class="grid-ph flex h-full w-full items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <span class="text-xs font-bold text-ph">ADD IMAGE</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between gap-4 p-4">
+              <div>
+                <span class="mb-1 inline-block border-2 border-ink px-2 text-[10px] font-bold group-hover:border-red group-hover:text-red">FILM</span>
+                <h3 class="text-sm font-bold group-hover:text-red">PROJECT TITLE</h3>
+                <p class="text-xs text-muted">One line about the project</p>
+              </div>
+              <span class="text-xs font-bold text-muted">2026</span>
+            </div>
+          </a>
+
+          <a href="#" class="group block">
+            <div class="aspect-[16/10] overflow-hidden border-4 border-ink">
+              <div class="grid-ph flex h-full w-full items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <span class="text-xs font-bold text-ph">ADD IMAGE</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between gap-4 p-4">
+              <div>
+                <span class="mb-1 inline-block border-2 border-ink px-2 text-[10px] font-bold group-hover:border-red group-hover:text-red">PHOTO</span>
+                <h3 class="text-sm font-bold group-hover:text-red">PROJECT TITLE</h3>
+                <p class="text-xs text-muted">One line about the project</p>
+              </div>
+              <span class="text-xs font-bold text-muted">2026</span>
+            </div>
+          </a>
+
+          <a href="#" class="group block">
+            <div class="aspect-[16/10] overflow-hidden border-4 border-ink">
+              <div class="grid-ph flex h-full w-full items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <span class="text-xs font-bold text-ph">ADD IMAGE</span>
+              </div>
+            </div>
+            <div class="flex items-center justify-between gap-4 p-4">
+              <div>
+                <span class="mb-1 inline-block border-2 border-ink px-2 text-[10px] font-bold group-hover:border-red group-hover:text-red">HACK</span>
+                <h3 class="text-sm font-bold group-hover:text-red">HACK DIBNER</h3>
+                <p class="text-xs text-muted">NYU Dibner Library hackathon</p>
+              </div>
+              <span class="text-xs font-bold text-muted">2026</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- IN THE LAB -->
+      <div id="lab" class="mt-8 border-t-4 border-ink">
+        <div class="p-6 sm:p-8 lg:p-12">
+          <h2 class="text-xs font-bold tracking-widest text-muted">IN THE LAB</h2>
+          <p class="mt-4 max-w-xl text-sm leading-relaxed">
+            Filmmaker and photographer turned creative technologist. I make things with cameras, code, and curiosity, and document the process here.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 border-t-4 border-ink">
+          <div class="border-b-4 sm:border-r-4 border-ink p-6 sm:p-8">
+            <h3 class="text-2xl font-bold lg:text-3xl">REVIEWS</h3>
+            <p class="mt-3 text-xs uppercase tracking-wide leading-relaxed text-muted">Tech and software, tested by a creative.</p>
+          </div>
+          <div class="border-b-4 border-ink p-6 sm:p-8">
+            <h3 class="text-2xl font-bold lg:text-3xl">THE MFA</h3>
+            <p class="mt-3 text-xs uppercase tracking-wide leading-relaxed text-muted">Building in public at NYU.</p>
+          </div>
+          <div class="border-b-4 sm:border-b-0 sm:border-r-4 border-ink p-6 sm:p-8">
+            <h3 class="text-2xl font-bold lg:text-3xl">TAKEAWAYS</h3>
+            <p class="mt-3 text-xs uppercase tracking-wide leading-relaxed text-muted">What I learned this week.</p>
+          </div>
+          <div class="bg-ink p-6 sm:p-8 text-cream">
+            <h3 class="text-2xl font-bold lg:text-3xl">60 SECONDS<span class="text-red">*</span></h3>
+            <p class="mt-3 text-xs uppercase tracking-wide leading-relaxed text-ph">Research a topic, then explain it on the clock.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTACT -->
+      <div id="contact" class="border-t-4 border-ink p-6 sm:p-8">
+        <h2 class="text-xl font-bold">COLLABS, REVIEWS, SPEAKING.</h2>
+        <p class="mt-1 text-xs uppercase tracking-wide text-muted">Say hi.</p>
+
+        <!--
+          To make this form actually send you email:
+          1. Make a free account at formspree.io and create a form
+          2. Replace YOUR_FORM_ID below with the ID they give you
+        -->
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="mt-6 max-w-xl space-y-4">
+          <label for="email" class="sr-only">Your email</label>
+          <input id="email" name="email" type="email" required placeholder="YOUR@EMAIL.COM"
+            class="w-full border-4 border-ink bg-transparent px-4 py-3 text-sm font-bold placeholder:text-ph focus:outline-none focus:ring-2 focus:ring-red" />
+          <label for="message" class="sr-only">Your message</label>
+          <textarea id="message" name="message" rows="4" required placeholder="YOUR MESSAGE"
+            class="w-full resize-none border-4 border-ink bg-transparent px-4 py-3 text-sm font-bold placeholder:text-ph focus:outline-none focus:ring-2 focus:ring-red"></textarea>
+          <button type="submit"
+            class="border-4 border-ink bg-ink px-6 py-3 text-sm font-bold text-cream transition-colors hover:border-red hover:bg-red">
+            SEND →
+          </button>
+        </form>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="flex items-center justify-between border-t-4 border-ink px-4 sm:px-6 py-4">
+        <span class="relative text-xs font-bold text-muted">
+          <!-- THE BACK DOOR: click/tap the © 7 times fast (or type the Konami code: ↑↑↓↓←→←→BA) -->
+          <button id="dreamTrig" type="button" aria-label="Copyright" class="inline-block cursor-default transition-transform duration-200">©</button>
+          <span id="yr"></span> MYA MONÉE CARR
+          <span id="dreamHint" class="pointer-events-none absolute -top-7 left-0 whitespace-nowrap border-2 border-ink bg-cream px-2 text-[10px] opacity-0 transition-opacity">keep going...</span>
+        </span>
+        <div class="flex gap-4">
+          <!-- Replace the # with your profile links -->
+          <a href="#" target="_blank" rel="noopener" class="text-xs font-bold text-muted hover:text-ink">IG</a>
+          <a href="#" target="_blank" rel="noopener" class="text-xs font-bold text-muted hover:text-ink">TT</a>
+          <a href="#" target="_blank" rel="noopener" class="text-xs font-bold text-muted hover:text-ink">YT</a>
+        </div>
+      </footer>
+
+    </section>
+  </main>
+
+  <!-- ================= FEVER DREAM (the back door) ================= -->
+  <style>
+    .fd {
+      position: fixed; inset: 0; z-index: 100; overflow-y: auto; display: none;
+      font-family: "Comic Neue", "Comic Sans MS", cursive; color: #fff;
+      background:
+        radial-gradient(#ffffff 1px, transparent 1.6px) 0 0 / 38px 38px,
+        radial-gradient(#ff5edb 1.4px, transparent 2px) 19px 19px / 57px 57px,
+        linear-gradient(180deg, #2b0057, #0a0020);
+    }
+    .fd.on { display: block; animation: fdIn .5s ease-out; }
+    @keyframes fdIn { from { opacity: 0; transform: scale(1.06); filter: blur(6px); } }
+    .pixel { font-family: "Press Start 2P", monospace; }
+    .rainbow {
+      background: linear-gradient(90deg,#ff3cac,#ffd23f,#3cff8f,#3cc6ff,#b03cff,#ff3cac);
+      background-size: 200% auto; -webkit-background-clip: text; background-clip: text;
+      color: transparent; animation: rb 3s linear infinite;
+    }
+    @keyframes rb { to { background-position: 200% center; } }
+    .mq { overflow: hidden; white-space: nowrap; }
+    .mq span { display: inline-block; padding-left: 100%; animation: mq 20s linear infinite; }
+    @keyframes mq { to { transform: translateX(-100%); } }
+    .blink { animation: bl 1s steps(1) infinite; }
+    @keyframes bl { 50% { opacity: 0; } }
+    .construction { background: repeating-linear-gradient(45deg,#ffd23f 0 16px,#111 16px 32px); }
+    .win { border: 4px outset #ff9ff3; background: rgba(0,0,0,.55); }
+    .win h3 { background: linear-gradient(90deg,#b03cff,#ff3cac); }
+    .glitch { animation: gl .6s steps(2); }
+    @keyframes gl {
+      25% { filter: hue-rotate(90deg) invert(1); transform: skewX(8deg); }
+      50% { filter: hue-rotate(200deg); transform: translateX(-12px) skewX(-6deg); }
+      75% { filter: invert(1); transform: translateX(10px); }
+    }
+    .sparkle { position: fixed; pointer-events: none; z-index: 200; font-size: 14px; animation: sp .8s forwards; }
+    @keyframes sp { to { transform: translateY(24px) scale(.2) rotate(90deg); opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .rainbow, .mq span, .blink, .glitch, .sparkle, .fd.on { animation: none !important; }
+      .mq span { padding-left: 0; }
+    }
+  </style>
+
+  <div id="fd" class="fd" role="dialog" aria-modal="true" aria-label="Fever dream">
+    <div class="mq border-y-4 border-[#ff9ff3] bg-black py-2">
+      <span class="pixel text-[10px] text-[#3cff8f]">
+        ★ YOU FOUND THE BACK DOOR ★ WELCOME 2 MY WORLD ★ BEST VIEWED AT 800x600 ★ SIGN MY GUESTBOOK B4 U LEAVE ★ NO ADULTS ALLOWED ★
+      </span>
+    </div>
+
+    <div class="mx-auto max-w-3xl px-4 pb-16">
+      <h2 class="rainbow pixel mt-10 text-center text-2xl leading-relaxed sm:text-4xl">~*~ MYA'S WORLD ~*~</h2>
+      <p class="mt-2 text-center text-lg">a fever dream from when i was little <span class="blink">✨</span></p>
+
+      <div class="construction mt-6 p-2">
+        <p class="pixel bg-black py-3 text-center text-[10px] text-[#ffd23f] sm:text-xs">🚧 FOREVER UNDER CONSTRUCTION 🚧</p>
+      </div>
+
+      <div class="mt-6 grid gap-6 sm:grid-cols-2">
+        <!-- ABOUT ME SURVEY: replace each [fill me in] -->
+        <div class="win">
+          <h3 class="pixel px-3 py-2 text-[10px]">ABOUT ME SURVEY.TXT</h3>
+          <dl class="space-y-2 p-4 text-base">
+            <div><dt class="inline font-bold text-[#ff9ff3]">name:</dt> <dd class="inline">mya monée</dd></div>
+            <div><dt class="inline font-bold text-[#ff9ff3]">grew up in:</dt> <dd class="inline">[fill me in]</dd></div>
+            <div><dt class="inline font-bold text-[#ff9ff3]">fav snack:</dt> <dd class="inline">[fill me in]</dd></div>
+            <div><dt class="inline font-bold text-[#ff9ff3]">after school show:</dt> <dd class="inline">[fill me in]</dd></div>
+            <div><dt class="inline font-bold text-[#ff9ff3]">song on repeat:</dt> <dd class="inline">[fill me in]</dd></div>
+            <div><dt class="inline font-bold text-[#ff9ff3]">wanted 2 be:</dt> <dd class="inline">[fill me in]</dd></div>
+          </dl>
+        </div>
+
+        <!-- TOP 8: swap the ? for emojis, words, or <img> tags -->
+        <div class="win">
+          <h3 class="pixel px-3 py-2 text-[10px]">MY TOP 8</h3>
+          <div class="grid grid-cols-4 gap-2 p-4">
+            <div class="flex aspect-square items-center justify-center border-2 border-[#ff9ff3] text-xl">?</div>
+            <div class="flex aspect-square items-center justify-center border-2 border-[#ff9ff3] text-xl">?</div>
+            <div class="flex aspect-square items-center justify-center border-2 border-[#ff9ff3] text-xl">?</div>
+            <div class="flex aspect-square items-center justify-center border-2 border-[#ff9ff3] text-xl">?</div>
+            <div class="flex aspect-square items-center justify-center border-2 border-[#ff9ff3] text-xl">?</div>
+            <div class="flex aspect-square items-center justify-center border-2 border-[#ff9ff3] text-xl">?</div>
+            <div class="flex aspect-square items-center justify-center border-2 border-[#ff9ff3] text-xl">?</div>
+            <div class="flex aspect-square items-center justify-center border-2 border-[#ff9ff3] text-xl">?</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="win mt-6">
+        <h3 class="pixel px-3 py-2 text-[10px]">GUESTBOOK</h3>
+        <div class="p-4">
+          <form id="gbForm" class="flex gap-2">
+            <label for="gbIn" class="sr-only">Leave a message</label>
+            <input id="gbIn" maxlength="80" placeholder="leave a msg :)" class="min-w-0 flex-1 border-2 border-[#ff9ff3] bg-black px-3 py-2 text-white placeholder:text-[#ff9ff3]/60 focus:outline-none" />
+            <button class="pixel border-4 border-outset border-[#3cff8f] bg-black px-3 text-[10px] text-[#3cff8f]">SIGN</button>
+          </form>
+          <ul id="gbList" class="mt-3 space-y-1 text-sm">
+            <li>💖 <b>mya:</b> thx 4 stopping by!!</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="mt-8 text-center">
+        u are visitor #<span id="hits" class="pixel ml-1 bg-black px-2 py-1 text-xs text-[#3cff8f]">0000000</span>
+      </p>
+
+      <div class="mt-10 text-center">
+        <button id="wake" class="pixel border-4 border-[#ffd23f] bg-black px-5 py-3 text-xs text-[#ffd23f] hover:bg-[#ffd23f] hover:text-black">← WAKE UP</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+
+    (function () {
+      const fd = document.getElementById('fd');
+      const trig = document.getElementById('dreamTrig');
+      const hint = document.getElementById('dreamHint');
+      const realTitle = document.title;
+      let clicks = 0, resetTimer, open = false;
+
+      function openDream() {
+        if (open) return;
+        open = true;
+        clicks = 0; trig.style.transform = ''; hint.style.opacity = 0;
+        document.body.classList.add('glitch');
+        setTimeout(() => {
+          document.body.classList.remove('glitch');
+          fd.classList.add('on');
+          fd.scrollTop = 0;
+          document.body.style.overflow = 'hidden';
+          document.title = '~*~ mya\'s world ~*~';
+          document.getElementById('hits').textContent =
+            String(Math.floor(1000 + Math.random() * 98000)).padStart(7, '0');
+        }, 600);
+      }
+      function closeDream() {
+        open = false;
+        fd.classList.remove('on');
+        document.body.style.overflow = '';
+        document.title = realTitle;
+      }
+
+      // Back door #1: tap the © 7 times
+      trig.addEventListener('click', () => {
+        clicks++;
+        clearTimeout(resetTimer);
+        resetTimer = setTimeout(() => { clicks = 0; trig.style.transform = ''; hint.style.opacity = 0; }, 2500);
+        trig.style.transform = `rotate(${clicks * 51}deg) scale(${1 + clicks * 0.12})`;
+        if (clicks >= 3) hint.style.opacity = 1;
+        if (clicks >= 7) openDream();
+      });
+
+      // Back door #2: Konami code
+      const code = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+      let pos = 0;
+      document.addEventListener('keydown', (e) => {
+        if (open && e.key === 'Escape') return closeDream();
+        const k = e.key.length === 1 ? e.key.toLowerCase() : e.key;
+        pos = (k === code[pos]) ? pos + 1 : (k === code[0] ? 1 : 0);
+        if (pos === code.length) { pos = 0; openDream(); }
+      });
+
+      document.getElementById('wake').addEventListener('click', closeDream);
+
+      // Sparkle cursor trail
+      const glyphs = ['✦','✧','★','♥','✿','✨'];
+      const colors = ['#ff3cac','#ffd23f','#3cff8f','#3cc6ff','#b03cff','#ffffff'];
+      let last = 0;
+      function sparkle(x, y) {
+        const now = Date.now();
+        if (!open || now - last < 40) return;
+        last = now;
+        const s = document.createElement('span');
+        s.className = 'sparkle';
+        s.textContent = glyphs[Math.floor(Math.random() * glyphs.length)];
+        s.style.color = colors[Math.floor(Math.random() * colors.length)];
+        s.style.left = x + 'px'; s.style.top = y + 'px';
+        document.body.appendChild(s);
+        setTimeout(() => s.remove(), 800);
+      }
+      document.addEventListener('mousemove', (e) => sparkle(e.clientX, e.clientY));
+      document.addEventListener('touchmove', (e) => { const t = e.touches[0]; sparkle(t.clientX, t.clientY); }, { passive: true });
+
+      // Guestbook (resets on reload)
+      document.getElementById('gbForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const input = document.getElementById('gbIn');
+        const msg = input.value.trim();
+        if (!msg) return;
+        const li = document.createElement('li');
+        li.textContent = '⭐ anon: ' + msg;
+        document.getElementById('gbList').appendChild(li);
+        input.value = '';
+      });
+    })();
+  </script>
+</body>
+</html>
